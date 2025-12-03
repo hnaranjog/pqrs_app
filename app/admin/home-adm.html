@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PQRS -Administrador</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <div id="main-container">
+        <nav-placeholder></nav-placeholder>
+
+        <main>
+          <!-- Sección de 1 columna para el título -->   
+          <div class="container-utp grid-2-col-utp">
+            <div class="grid-item-utp">
+              <h2>Información General</h2>
+              <div class="alert alert-primary d-flex align-items-center alert-custom-utp" role="alert">
+                <img src="/assets/img/info.svg" alt="Información" class="flex-shrink-0 me-2">
+                <p class="mb-0">Información: Estimado usuario, recuerde que para habilitar la respuesta de cualquier PQRS a este se le debe asignar un número de radicado por parte de GESTIÓN DE DOCUMENTOS. Por lo tanto si aún no ve pendientes en el listado, ingrese nuevamente más tarde.</p>
+              </div>
+            </div>
+            <div class="grid-item-utp">
+              <h2>PQRS</h2>
+              <p>
+                <ul>
+                  <li>Derechos de Petición - <span class="text-em-utp">Pendientes (2)</span></li>
+                  <li>Quejas reclamos y sugerencias - <span class="text-em-utp">Pendientes (1)</span></li>
+                  <li>Aclaraciones - <span class="text-em-utp">Pendientes (0)</span></li>
+                </ul>
+              </p>
+            </div>
+            <div class="grid-item-utp">
+              <h2>Estado de solicitudes</h2>
+              <div class="semaforo-utp">
+                <ul class="semaforo-list-utp">
+                  <li class="semaforo-item-utp">
+                    <div class="alert alert-primary d-flex justify-content-between align-items-center w-100" role="alert" style="width: 100%;">
+                      <span class="text-info-semaforo mb-0">
+                        <img src="/assets/img/pending_actions.svg" alt="Icono de acciones pendientes" class="icon">
+                        Solicitudes pendientes por responder
+                      </span>
+                      <span class="badge bg-primary">3</span>
+                    </div>
+                  </li>
+                  <li class="semaforo-item-utp">
+                    <div class="alert alert-warning d-flex justify-content-between align-items-center w-100" role="alert" style="width: 100%;">
+                      <span class="text-info-semaforo mb-0">
+                        <img src="/assets/img/hourglass_bottom.svg" alt="Icono de reloj de arena" class="icon">
+                        Solicitudes próximo a vencer
+                      </span>
+                      <span class="badge bg-warning">2</span>
+                    </div>
+                  </li>
+                  <li class="semaforo-item-utp">
+                    <div class="alert alert-danger d-flex justify-content-between align-items-center w-100" role="alert" style="width: 100%;">
+                      <span class="text-info-semaforo mb-0">
+                        <img src="/assets/img/vencidas.svg" alt="Icono de solicitudes vencidas" class="icon">
+                        Solicitudes vencidas</span>
+                      <span class="badge bg-danger">0</span>
+                    </div>
+                  </li>
+                  <li class="semaforo-item-utp">
+                    <div class="alert alert-info d-flex justify-content-between align-items-center w-100" role="alert" style="width: 100%;">
+                      <span class="text-info-semaforo mb-0">
+                        <img src="/assets/img/suspendidas.svg" alt="Icono de solicitudes suspendidas" class="icon">
+                        Tiempo de respuesta suspendido por solicitud de información en espera</span>
+                      <span class="badge bg-info">0</span>
+                    </div>
+                  </li>
+                  <li class="semaforo-item-utp">
+                    <div class="alert alert-secondary d-flex justify-content-between align-items-center w-100" role="alert" style="width: 100%;">
+                      <span class="text-info-semaforo mb-0">
+                        <img src="/assets/img/mail.svg" alt="Icono de solicitudes respuestas" class="icon">
+                        Respuesta a solicitud de información por parte del peticionario</span>
+                      <span class="badge bg-secondary">0</span>
+                    </div>
+                  </li>
+                  <li class="semaforo-item-utp">
+                    <div class="alert alert-success d-flex justify-content-between align-items-center w-100" role="alert" style="width: 100%;">
+                      <span class="text-info-semaforo mb-0">
+                        <img src="/assets/img/forward_internal.svg" alt="Icono de solicitudes suspendidas" class="icon">
+                        Solicitud con traslado interno</span>
+                      <span class="badge bg-success">0</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid-item-utp">
+              <h2>Sección 4</h2>
+              <p>Contenido de la sección 4.</p>
+            </div>
+          </div>            
+        </main>
+    </div>
+
+    <footer-placeholder></footer-placeholder>
+
+    <sidebar-left-placeholder></sidebar-left-placeholder>
+
+    <!-- This script will load all components and then load the main script.js -->
+    <script src="/assets/js/loader.js"></script>
+
+</body>
+</html>

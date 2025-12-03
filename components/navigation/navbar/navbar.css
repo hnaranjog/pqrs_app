@@ -1,0 +1,146 @@
+nav.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #241c1c;
+    padding: 0 1rem;
+    min-height: 60px;
+}
+
+.brand-utp {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.nav-links-utp {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* --- Profile Dropdown Section --- */
+/* Container for the profile button and dropdown */
+.profile-option-utp {
+    position: relative; /* Needed for dropdown positioning */
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/* Hide the default dropdown arrow from Bootstrap */
+.profile-option-utp .dropdown-toggle::after {
+    display: none;
+}
+
+/* The actual dropdown menu */
+.profile-option-utp .dropdown-menu {
+    min-width:210px;   /* Set a fixed minimum width */
+    right: 5px;         /* Position 5px from the right edge */
+    left: auto;         /* Override Bootstrap's default left positioning */
+    top: 100%;          /* Position the dropdown below the button */
+    margin-top: 0.5rem; /* Add some space below the button */
+    background-color: #241c1c;
+}
+
+.profile-option-utp .dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.profile-option-utp .dropdown-menu .dropdown-item:hover {
+  width: 93%;
+  background-color: #b0afaf;
+  color: #241c1c;
+}
+
+/* The main profile button */
+.profile-btn-utp {
+    /* Default state (logged out) */
+    min-width: 160px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+/* The image for the user's profile picture */
+.profile-btn-utp .profile-img-utp {
+    display: none; /* Hidden by default, shown via JS */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* The default SVG icon for the logged-out state */
+.profile-btn-utp .default-icon-utp {
+    display: inline-block; /* Visible by default */
+}
+
+/* Styles for the button when a user is logged in */
+.profile-btn-utp.logged-in {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    background-color: #003D6D; /* Fallback color for initials */
+    border: 1px solid #fff;
+    overflow: hidden;
+    padding: 0;
+    gap: 0;
+}
+
+.badge-notification-utp {
+  position: absolute;
+  top: 1px;
+  right: 4px;
+  transform: translate(25%, -25%);
+  font-size: 0.6em; /* Hacemos el badge un poco más pequeño */
+}
+
+/* --- General Nav Link Styles --- */
+nav.navbar a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+}
+
+nav .navbar a:hover {
+    color: #b0afaf; /* Mismo gris que en otros hovers para consistencia */
+}
+
+.nav-links-utp .nav-link {
+    color: #fff; /* Cambia el color del texto a blanco */
+    text-decoration: none; /* Elimina el subrayado */
+    transition: color 0.2s ease-in-out; /* Suaviza el cambio de color */
+}
+
+.navbar .nav-link:hover {
+    color: #b0afaf; /* Cambia a gris claro al pasar el cursor */
+}
+
+/* Ensure navbar items stay in a single row and don't wrap on smaller screens */
+.nav-links-utp .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1rem; /* Add space between nav items to prevent them from sticking together */
+}
+
+/* --- Responsive Styles --- */
+@media (max-width: 720px) {
+    .nav-links-utp {
+        display: none;
+    }
+
+}

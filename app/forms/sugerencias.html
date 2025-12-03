@@ -1,0 +1,123 @@
+<!-- Modal Sugerencias -->
+<div class="modal fade" id="sugerenciaModal" tabindex="-1" aria-labelledby="sugerenciaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="sugerenciaModalLabel">Formulario de Sugerencias</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Por favor, complete el siguiente formulario para registrar su solicitud.</p>
+        <p><span class="required-field"></span><strong>Datos requeridos</strong></p>
+        <form id="sugerencia-form">
+          <div class="mb-3">
+            <label for="requester-id-type" class="form-label">Tipo de identificación</label>
+            <select name="requester-id-type" id="requester-id-type" class="form-select">
+              <option value="">Seleccione...</option>
+              <option value="cc">Cédula de Ciudadanía</option>
+              <option value="nuip">Número único de identificación Personal</option>
+              <option value="ce">Cédula de Extranjería</option>
+              <option value="nit">Número de Identificación Tributaria</option>
+              <option value="pa">Pasaporte</option>
+            </select>
+          </div>
+          <!-- Ocultar los campos -->
+          <div class="d-none" id="requester-extra-fields">
+            <div class="mb-3" id="requester-id-field">
+              <label for="requester-id" class="form-label required-field">Número de Identificación</label>
+              <input type="text" class="form-control" id="requester-id" required>
+            </div>
+            <div class="mb-3">
+              <label for="requester-name" class="form-label required-field">Nombres</label>
+              <input type="text" class="form-control" id="requester-name" required>
+            </div>
+            <div class="mb-3">
+              <label for="requester-lastname" class="form-label required-field">Apellidos</label>
+              <input type="text" class="form-control" id="requester-lastname" required>
+            </div>
+            <div class="mb-3">
+              <label for="requester-relationship" class="form-label">Cual es tu tipo de relación con la UTP?</label>
+              <select name="requester-relationship" id="requester-relationship" class="form-select" required>
+                <option value="">Seleccione...</option>
+                <option value="Estudiante">Estudiante</option>
+                <option value="Administrativo">Administrativo</option>
+                <option value="Docente">Docente</option>
+                <option value="Contratista">Contratista</option>
+                <option value="Acudiente">Padre de familia</option>
+                <option value="Egresado">Egresado</option>
+                <option value="Veeduria">Veeduría</option>
+                <option value="Otro">Otros (Usuario externo a la UTP)</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="requester-email" class="form-label required-field">Correo Electrónico</label>
+              <input type="email" class="form-control" id="requester-email" required>
+            </div>
+            <div class="mb-3">
+              <label for="requester-country" class="form-label required-field">País</label>
+              <input type="text" class="form-control" id="requester-country" required>
+            </div>
+            <div class="mb-3">
+              <label for="requester-department" class="form-label required-field">Departamento</label>
+              <input type="text" class="form-control" id="requester-department" required>
+            </div>
+            <div class="mb-3">
+              <label for="requester-city" class="form-label required-field">Ciudad</label>
+              <input type="text" class="form-control" id="requester-city" required>
+            </div>
+            <div class="mb-3">
+              <label for="requester-address" class="form-label required-field">Dirección</label>
+              <input type="text" class="form-control" id="requester-address" required>
+            </div>
+            <div class="mb-3">
+              <label for="requester-phone" class="form-label required-field">Teléfono</label>
+              <input type="text" class="form-control" id="requester-phone" required>
+            </div>
+        </div>
+          <div class="mb-3">
+            <label for="requester-subject" class="form-label required-field">Asunto</label>
+            <input type="text" class="form-control" id="requester-subject" required>
+          </div>
+          <div class="mb-3">
+            <label for="sugerencia-editor-container" class="form-label required-field">Detalles de la Solicitud</label>
+            <div id="sugerencia-editor-container" data-target-input="sugerencia-details"></div>
+          </div>
+          <div class="mb-3">
+            <label for="dependence" class="form-label required-field">Dependencia</label>
+            <select name="dependence" id="dependence" class="form-select" required>
+              <option value="">Seleccione...</option>
+              <option value="Academica">Académica</option>
+              <option value="Administrativa">Administrativa</option>
+              <option value="Financiera">Financiera</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="requester-answer-type" class="form-label required-field">Medio de respuesta</label>
+            <select name="requester-answer-type" id="requester-answer-type" class="form-select" required>
+              <option value="">Seleccione...</option>
+              <option value="Email">Correo Electrónico</option>
+              <option value="Telefono">Teléfono</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="requester-file" class="form-label">Adjuntar Archivo (Opcional)</label>
+            <input type="file" class="form-control" id="requester-file" multiple>
+          </div>
+          <!-- Contenedor para mostrar el archivo seleccionado, oculto por defecto -->
+          <div id="file-list-container" class="d-none">
+            <ul id="file-list" class="list-group"></ul>
+          </div>
+          <div class="mb-3">
+            <label for="recaptcha" class="form-label required-field">Recaptcha</label>
+            <div id="recaptcha-container" class="g-recaptcha" data-sitekey="6LdjBiAUAAAAANeEvzVKio2R-NfoJDb--dorX_u6"></div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="submit" form="sugerencia-form" class="btn btn-primary">Enviar Solicitud</button>
+      </div>
+    </div>
+  </div>
+</div>

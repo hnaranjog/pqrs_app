@@ -1,0 +1,80 @@
+/* Estilos para el widget de asistente flotante */
+.asesor-widget-utp {
+  position: fixed; /* Fija el elemento en la ventana de visualización */
+  bottom: 25px;
+  right: 25px;
+  z-index: 1050; /* Asegura que esté por encima de la mayoría de los elementos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contenedor del GIF y el popup, oculto por defecto */
+.asesor-content-utp {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px; /* Espacio entre el contenido y el botón de ayuda */
+}
+
+/* Cuando el widget está activo, muestra el contenido */
+.asesor-widget-utp.active .asesor-content-utp {
+  display: flex;
+}
+
+/* Estilos para el popup de opciones */
+.asesor-popup-utp {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 10px;
+  width: max-content; /* El ancho se ajusta al contenido */
+  margin-bottom: 15px; /* Espacio entre el popup y el GIF */
+}
+
+.asesor-img-utp {
+  width: 300px; /* Tamaño del GIF, ajustar según sea necesario */
+  height: auto; /* Mantiene la proporción */
+  border-radius: 15px;
+  background: transparent; /* Asegura fondo transparente en el contenedor */
+}
+
+/* Botón principal para mostrar/ocultar */
+.asesor-trigger-btn-utp {
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  /* Los colores ya los hereda de .btn-info de Bootstrap */
+}
+
+.asesor-trigger-btn-utp:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para los botones dentro del popup */
+.asesor-popup-btn-utp {
+    background-color: transparent;
+    border: 1px solid #003D6D;
+    color: #003D6D;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.asesor-popup-btn-utp:hover {
+    background-color: #003D6D;
+    color: white;
+}
+
+/* Media query para ajustar el tamaño en pantallas más pequeñas si es necesario */
+@media (max-width: 768px) {
+    .asesor-img-utp {
+        width: 160px; /* Reduce el tamaño en móviles */
+    }
+}

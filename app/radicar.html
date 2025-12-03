@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Servicios</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <div id="main-container">
+        <nav-placeholder></nav-placeholder>
+
+        <main>
+          <!-- Sección de 1 columna para el título -->
+          <div class="container-utp grid-1-col-utp radicar-container">
+              <div class="grid-item-utp">
+              <h1>Reportar PQRS</h1>
+              <p>Registre su solicitud, seleccione el tipo de PQRS que desea realizar y haga clic en el botón <span class="text-em-utp">Solicitar</span></p>
+              <p>Utilice los botones <img src="../assets/img/right.jpg" width="32px"> y <img src="../assets/img/left.jpg" width="32px">  para desplazarse adelante y atras entre las opciones de PQRS.</p>
+              
+              </div>
+          
+          <div class="grid-item-utp">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <div class="carousel-item-content">
+                    <img src="/assets/img/sugerencias.jpg" class="d-none d-md-block" alt="...">
+                    <div class="carousel-caption d-block">
+                      <h5>Sugerencias, Quejas y Reclamos</h5>
+                      <div class="form-option form-option-pqrs">
+                        <label class="radio" style="font-weight:normal">
+                            <input type="radio" name="form-pqr" required="required" value="sugerencia" id="sugerencia">
+                            <strong>Sugerencia</strong>: Manifestación o idea que se ofrece con el propósito de incidir en el mejoramiento de un proceso cuyo objeto se encuentre relacionado con la prestación de un servicio.
+                        </label>
+                        <label class="radio" style="font-weight:normal">
+                            <input type="radio" name="form-pqr" required="required" value="queja" id="queja" data-modal-title="Formulario de Quejas">
+                            <strong>Queja</strong>: Manifestación de protesta, censura, descontento o inconformidad que formula un usuario en relación con una conducta que considera inadecuada en la prestación de un servicio por parte de uno o varios servidores públicos.
+                        </label>
+                        <label class="radio" style="font-weight:normal">
+                            <input type="radio" name="form-pqr" required="required" value="reclamo" id="reclamo" data-modal-title="Formulario de Reclamos">
+                            <strong>Reclamo</strong>: Manera de exigir, reivindicar o demandar una solución a la Universidad para que corrija la mala prestación de un servicio o la falta de atención a una solicitud.
+                        </label>
+                        <p>El término para brindar respuesta a estos requerimientos es de <span class="text-em-utp">quince (15) días hábiles siguientes a su recepción.</span></p>
+                        <button type="button" class="btn action-btn-utp" id="btn-sqr-utp" data-bs-toggle="modal" disabled>Solicitar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="carousel-item-content">
+                    <img src="/assets/img/solicitante.jpg" class="d-none d-md-block" alt="...">
+                    <div class="carousel-caption d-block">
+                      <h5>Derecho de petición</h5>
+                      <div class="form-option form-option-derecho">
+                        <label class="radio">
+                            <input type="radio" name="form-dp" required="required" value="general" id="general">
+                            <strong>Derecho de petición en interés general</strong>: Es el derecho que tiene toda persona de acudir ante las autoridades para reclamar la resolución de fondo de una petición presentada que afecta los intereses colectivos. El término para brindar respuesta es de <span class="text-em-utp">(15) días hábiles siguientes a su recepción.</span>
+
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="form-dp" required="required" value="informacion" id="informacion">
+                            <strong>Derecho de petición de información o documentos</strong>: Es el derecho que tiene toda persona de solicitar el acceso a información, ante las autoridades para el conocimiento de una actuación o un acto concreto y determinado por parte de éstas. El término para brindar respuesta es de <span class="text-em-utp">diez (10) días hábiles siguientes a su recepción.</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="form-dp" required="required" value="consulta" id="consulta">
+                            <strong>Derecho de petición de consulta</strong>: Es el derecho que tiene toda persona de acudir ante las autoridades públicas para formular consultas, consulta en relación con las materias a su cargo. El término para brindar respuesta es de <span class="text-em-utp">treinta (30) días hábiles siguientes a su recepción.</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="form-dp" required="required" value="particular" id="particular">
+                            <strong>Derecho Petición en interés particular</strong>: Es el derecho que tiene toda persona para realizar peticiones o solicitudes a las autoridades administrativas, solicitar el reconocimiento de un derecho, la intervención de una entidad o funcionario, la resolución de una situación jurídica, la prestación de un servicio. El término para brindar respuesta es de <span class="text-em-utp">quince (15) días hábiles siguientes a su recepción.</span>
+                        </label>
+                        <button type="button" class="btn action-btn-utp btn-dp-utp" id="btn-dp-utp" data-bs-toggle="modal" disabled>Solicitar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-item-content">
+                    <img src="/assets/img/denuncias.jpg" class="d-none d-md-block w-100" alt="...">
+                    <div class="carousel-caption d-block">
+                      <h5>Denuncias por corrupción</h5>
+                      <div class="form-option form-option-denuncia">
+                        <label class="radio">
+                          <input type="radio" name="form-denuncia" required="required" value="denuncia" id="denuncia">
+                          <div>
+                            <p>
+                                Es la puesta en conocimiento ante la Universidad de una conducta posiblemente irregular de un servidor público que corresponda al uso indebido del poder, la confianza, los recursos o la información que conlleve a lesionar los intereses de la Universidad para el beneficio propio o de otra persona. Esta conducta se puede dar a través de ofrecimientos, solicitudes, entrega o recibo de bienes, dinero, servicios o beneficios a cambio de acciones, decisiones u omisiones.
+                            </p>
+                            <p>También puede enviar sus Denuncias por Corrupción al correo electrónico <a href="mailto:denunciascorrupcion@utp.edu.co">denunciascorrupcion@utp.edu.co</a>.</p>
+                          </div>
+                        </label>
+                        <button type="button" class="btn action-btn-utp btn-denuncia-utp" id="btn-denuncia-utp" data-bs-toggle="modal" disabled>Solicitar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Placeholder for the modal, which will be loaded dynamically by forms.js -->
+    <div id="modal-placeholder"></div>
+
+    <footer-placeholder></footer-placeholder>
+
+    <sidebar-left-placeholder></sidebar-left-placeholder>
+
+    <!-- This script will load all components and then load the main script.js -->
+    <script src="/assets/js/loader.js"></script>
+</body>
+</html>

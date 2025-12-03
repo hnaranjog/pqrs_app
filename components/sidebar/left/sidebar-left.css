@@ -1,0 +1,186 @@
+/* General styles for the sidebar component, encapsulated here for sidebar-left */
+.sidebar-utp {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #cecaca;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+    z-index: 900; /* Ensure sidebars are above the main content */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    overflow-x: hidden; /* Hides content that overflows horizontally */
+}
+
+.sidebar-utp h3 {
+    margin-top: 0;
+    color: #333; /* Color de texto oscuro para legibilidad */
+    white-space: nowrap; /* Prevents title from wrapping */
+    transition: opacity 0.2s ease-in-out, height 0.2s ease-in-out, margin 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.sidebar-utp a {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+#sidebar-left {
+    left: 0;
+    width: 70px; /* Collapsed state width */
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar-left.active {
+    width: 250px; /* Expanded state width */
+}
+
+/* Hide the entire brand container (logo and title) when sidebar is collapsed */
+#sidebar-left:not(.active) .sidebar-brand-container-utp {
+    display: none;
+}
+
+#sidebar-left a {
+    background-color: #211A1A; /* Mismo color que el contenedor */
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center; 
+    transition: background-color 0.2s ease-in-out;
+    box-sizing: border-box; /* Clave para que el ancho se calcule correctamente */
+    justify-content: center; /* Center icon when collapsed */
+}
+
+#sidebar-left.active a {
+    justify-content: flex-start; /* Align left when expanded */
+}
+
+#sidebar-left a img {
+    min-width: 24px; /* Ensures icon doesn't shrink */
+}
+
+/*
+  Aplica un filtro para unificar el color de iconos específicos.
+  Esto es útil si los archivos SVG originales tienen un color oscuro (ej. azul) y se desea
+  que coincidan con los demás iconos claros (#EFEFEF) sin modificar el archivo de imagen.
+  Este filtro los convierte a blanco.
+*/
+#sidebar-left a[href="radicar.html"] img,
+#sidebar-left a[href="consultar.html"] img {
+    filter: brightness(0) invert(1);
+    width: 24px; /* Ensures icon size is consistent */
+}
+
+#sidebar-left a:hover {
+    background-color: #b0afaf; /* Efecto visual al pasar el cursor */
+    color: #211A1A; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* En hover, todos los iconos se oscurecen para mantener el contraste */
+#sidebar-left a:hover img {
+    filter: brightness(0) invert(0.1);
+}
+
+.link-text-utp {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, max-width 0.3s ease-in-out;
+    white-space: nowrap; /* Prevents text from wrapping */
+    max-width: 0;
+    overflow: hidden;
+}
+
+#sidebar-left.active .link-text-utp {
+    opacity: 1;
+    max-width: 150px; /* Allow text to expand */
+    margin-left: 0.75rem; /* Simulate the gap */
+}
+
+.sidebar-profile-utp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #cecaca;
+    color: #333;
+    padding: 1rem;
+    border: 1px solid #b0afaf;
+    border-radius: 8px; 
+    margin-top: auto; /* Empuja el perfil al fondo del sidebar */
+    box-sizing: border-box;
+    width: 100%; /* Asegura que ocupe el ancho completo */
+}
+
+.sidebar-profile-utp img {
+    filter: invert(1); /* Turns the white SVG icon to #0E0606 */
+}
+
+.sidebar-header-utp {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el botón y el título */
+    justify-content: space-between; /* Distribuye el espacio entre el botón y el título */
+    margin-bottom: 1rem;
+}
+
+#sidebar-left:not(.active) .sidebar-header-utp {
+    justify-content: center; /* Centra el botón cuando el sidebar está colapsado */
+}
+
+.menu-btn-utp {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative; /* Establece el contexto para posicionar los iconos */
+}
+
+.menu-btn-utp .menu-icon-left-utp,
+.menu-btn-utp .menu-icon-right-utp {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu-btn-utp .menu-icon-left-utp {
+    opacity: 0; /* Oculta el icono de expandir por defecto */
+}
+
+#sidebar-left.active .menu-btn-utp .menu-icon-left-utp {
+    opacity: 1; /* Muestra el icono de expandir cuando la barra está activa */
+    justify-content: center;
+}
+
+.menu-btn-utp img {
+    width: 24px;
+    height: 24px;
+}
+
+#sidebar-left.active .menu-btn-utp .menu-icon-right-utp {
+    opacity: 0; /* Oculta el icono de colapsar cuando la barra está activa */
+}
+
+/* Estilo para el nuevo botón de accesibilidad */
+a#accessibility-sidebar-btn {
+    margin-top: auto; /* Empuja el botón al fondo del menú lateral */
+    background-color: #003D6D; /* Color azul específico para este botón */
+}
+
+/* Hover específico para el botón de accesibilidad para que no herede el gris */
+a#accessibility-sidebar-btn:hover {
+    background-color: #005293; /* Un azul un poco más claro para el hover */
+    color:white;
+}
+
+/* Excepción para el botón de accesibilidad: el icono se mantiene blanco en hover */
+a#accessibility-sidebar-btn:hover img {
+    filter: brightness(0) invert(1);
+}

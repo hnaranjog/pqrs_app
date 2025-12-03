@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Servicios</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <div id="main-container">
+        <nav-placeholder></nav-placeholder>
+
+        <main>
+            <!-- Sección de 1 columna para el título -->
+            <div class="container-utp grid-1-col-utp">
+              <div class="grid-item-utp">               
+                <h2>Consultar las solicitudes, derechos de petición y denuncias por corrupción</h2>
+                <p>Consulte el estado de su petición, queja, reclamo o sugerencia.
+                  <br><em>Seleccione una opción para continuar.</em>
+                </p>
+                <div class="form-option form-option-consulta">
+                  <label class="radio">
+                      <input type="radio" name="form-request-dp" required="required" value="general" id="pqr">
+                      <strong>Consultas, quejas, reclamos y sugerencias, derecho de petición y denuncias por corrupción</strong>
+
+                  </label>
+                  <label class="radio">
+                      <input type="radio" name="form-request-dp" required="required" value="informacion" id="derechos">
+                      <strong>Consultas de derechos de petición</strong>
+                  </label>
+                  <label class="radio">
+                      <input type="radio" name="form-request-dp" required="required" value="consulta" id="denuncias">
+                      <strong>Consultar denuncias por corrupción</strong>
+                  </label>
+                  <label class="radio">
+                      <input type="radio" name="form-request-dp" required="required" value="particular" id="validar">
+                      <strong>Validar documentos</strong>
+                  </label>
+                  <button type="button" class="btn action-btn-utp btn-request-utp" id="btn-consultar-utp" data-bs-toggle="modal" disabled>Consultar</button>
+                </div>
+              </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Placeholder for the modal, which will be loaded dynamically by forms.js -->
+    <div id="modal-request-placeholder"></div>
+
+    <footer-placeholder></footer-placeholder>
+
+    <sidebar-left-placeholder></sidebar-left-placeholder>
+
+    <!-- This script will load all components and then load the main script.js -->
+    <script src="/assets/js/loader.js"></script>
+</body>
+</html>
