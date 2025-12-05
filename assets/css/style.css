@@ -1,54 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  :root {
-  --venice-blue-50: #ffffff;
-  --venice-blue-100: #ddf0ff;
-  --venice-blue-200: #bfe2ff;
-  --venice-blue-300: #99d4ff;
-  --venice-blue-400: #6cc3ff;
-  --venice-blue-500: #53aef8;
-  --venice-blue-600: #4894d1;
-  --venice-blue-700: #3876a9;
-  --venice-blue-800: #25567e;
-  --venice-blue-900: #0f2e47;
-  --venice-blue-950: #081e30;
-}
+    :root {
+        --venice-blue-50: #ffffff;
+        --venice-blue-100: #ddf0ff;
+        --venice-blue-200: #bfe2ff;
+        --venice-blue-300: #99d4ff;
+        --venice-blue-400: #6cc3ff;
+        --venice-blue-500: #53aef8;
+        --venice-blue-600: #4894d1;
+        --venice-blue-700: #3876a9;
+        --venice-blue-800: #25567e;
+        --venice-blue-900: #0f2e47;
+        --venice-blue-950: #081e30;
+    }
 
 
-  --primary-color: var(--venice-blue-900);
-  --secondary-color: var(--venice-blue-200);
-  --third-color: var(--venice-blue-600);
-  --white-color: #FFFFFF;
-  --black-color: #000000;
-  --gray-color: #CCCCCC;
-  --gray-footer-color: #f1f1f1;
-  --bg-blue-color: var(--venice-blue-50);
-  --border-blue-color: var(--venice-blue-300);
+    --primary-color: var(--venice-blue-900);
+    --secondary-color: var(--venice-blue-200);
+    --third-color: var(--venice-blue-600);
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --gray-color: #CCCCCC;
+    --gray-footer-color: #f1f1f1;
+    --bg-blue-color: var(--venice-blue-50);
+    --border-blue-color: var(--venice-blue-300);
 
 
-  --high-contrast-black: #241c1c;
-  --high-contrast-orange: #FF5555;
-  --high-contrast-yellow: #FFFF00;
-  --high-contrast-blue: #084298;
-  --high-contrast-orange: #664d03;
-  --high-contrast-red: #58151c;
-  --high-contrast-blue: #055160;
-  --high-contrast-gray: #6c757d;
-  --high-contrast-green: #34773d;;
-
-  
-  --font-family: "Montserrat", sans-serif;
+    --high-contrast-black: #241c1c;
+    --high-contrast-orange: #FF5555;
+    --high-contrast-yellow: #FFFF00;
+    --high-contrast-blue: #084298;
+    --high-contrast-orange: #664d03;
+    --high-contrast-red: #58151c;
+    --high-contrast-blue: #055160;
+    --high-contrast-gray: #6c757d;
+    --high-contrast-green: #34773d;
+    ;
 
 
-  /* Filtros para los iconos de las alertas, para que coincidan con el color del texto de Bootstrap */
-  --alert-primary-filter: invert(25%) sepia(89%) saturate(1557%) hue-rotate(198deg) brightness(96%) contrast(93%); /* ~#084298 */
-  --alert-warning-filter: invert(52%) sepia(11%) saturate(2126%) hue-rotate(1deg) brightness(99%) contrast(90%); /* ~#664d03 */
-  --alert-danger-filter: invert(18%) sepia(49%) saturate(2839%) hue-rotate(335deg) brightness(90%) contrast(94%); /* ~#58151c */
-  --alert-info-filter: invert(47%) sepia(33%) saturate(1001%) hue-rotate(152deg) brightness(94%) contrast(91%); /* ~#055160 */
-  --alert-secondary-filter: invert(34%) sepia(7%) saturate(1037%) hue-rotate(169deg) brightness(92%) contrast(86%); /* ~#6c757d */
-  --alert-success-filter: invert(34%) sepia(24%) saturate(1057%) hue-rotate(77deg) brightness(90%) contrast(93%); /* ~#34773d */
-  
+    --font-family: "Montserrat",
+    sans-serif;
+
+
+    /* Filtros para los iconos de las alertas, para que coincidan con el color del texto de Bootstrap */
+    --alert-primary-filter: invert(25%) sepia(89%) saturate(1557%) hue-rotate(198deg) brightness(96%) contrast(93%);
+    /* ~#084298 */
+    --alert-warning-filter: invert(52%) sepia(11%) saturate(2126%) hue-rotate(1deg) brightness(99%) contrast(90%);
+    /* ~#664d03 */
+    --alert-danger-filter: invert(18%) sepia(49%) saturate(2839%) hue-rotate(335deg) brightness(90%) contrast(94%);
+    /* ~#58151c */
+    --alert-info-filter: invert(47%) sepia(33%) saturate(1001%) hue-rotate(152deg) brightness(94%) contrast(91%);
+    /* ~#055160 */
+    --alert-secondary-filter: invert(34%) sepia(7%) saturate(1037%) hue-rotate(169deg) brightness(92%) contrast(86%);
+    /* ~#6c757d */
+    --alert-success-filter: invert(34%) sepia(24%) saturate(1057%) hue-rotate(77deg) brightness(90%) contrast(93%);
+    /* ~#34773d */
+
 }
 
 body {
@@ -62,8 +70,10 @@ body {
 }
 
 a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: inherit; /* Hereda el color del elemento padre */
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    color: inherit;
+    /* Hereda el color del elemento padre */
 }
 
 h1 {
@@ -104,7 +114,8 @@ main {
 }
 
 #main-container.shifted-left {
-    margin-left: 250px; /* Margin for expanded sidebar */
+    margin-left: 250px;
+    /* Margin for expanded sidebar */
 }
 
 .grid-1-col-utp {
@@ -129,7 +140,7 @@ main {
 }
 
 .grid-item-utp img {
-  max-width: 668px;
+    max-width: 668px;
 }
 
 /* Specific grid layout for the services page */
@@ -138,16 +149,20 @@ main {
 }
 
 .services-page-utp .grid-item-utp:nth-child(1) {
-    grid-column: span 4; /* First item takes full width */
+    grid-column: span 4;
+    /* First item takes full width */
 }
 
 .services-page-utp .grid-item-utp:nth-child(2),
 .services-page-utp .grid-item-utp:nth-child(3) {
-    grid-column: span 2; /* Second and third items take half width */
+    grid-column: span 2;
+    /* Second and third items take half width */
 }
+
 /* Items 4, 5, 6, 7, and 8 will automatically take 1 column each */
 
 @media (max-width: 1024px) {
+
     .grid-2-col-utp,
     .grid-3-col-utp,
     .grid-4-col-utp {
@@ -157,6 +172,7 @@ main {
 
 
 @media (max-width: 768px) {
+
     .grid-2-col-utp,
     .grid-3-col-utp,
     .grid-4-col-utp,
@@ -165,7 +181,8 @@ main {
     }
 
     .services-page-utp .grid-item-utp {
-        grid-column: auto; /* Reset span for services page items */
+        grid-column: auto;
+        /* Reset span for services page items */
     }
 }
 
@@ -196,7 +213,8 @@ main {
     margin-bottom: 1.5rem;
     border: 1px solid var(--gray-color);
     /* border-radius: 5px; */
-    box-sizing: border-box; /* Important for width calculation */
+    box-sizing: border-box;
+    /* Important for width calculation */
     font-size: 1rem;
     font-family: var(--font-family);
 }
@@ -248,19 +266,27 @@ main {
 .profile-image-view-utp {
     width: 120px;
     height: 120px;
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    border: 3px solid var(--primary-color); /* Optional: adds a colored border */
-    margin-bottom: 1.5rem; /* Space below the image */
-    display: block; /* Ensures margin-bottom works correctly */
+    border-radius: 50%;
+    /* Makes the image circular */
+    object-fit: cover;
+    /* Ensures the image covers the area without distortion */
+    border: 3px solid var(--primary-color);
+    /* Optional: adds a colored border */
+    margin-bottom: 1.5rem;
+    /* Space below the image */
+    display: block;
+    /* Ensures margin-bottom works correctly */
 }
 
 .contact-image-utp {
     width: 100%;
     height: auto;
-    display: block; /* Removes extra space below the image */
-    border-radius: 5px; /* Optional: softens the image corners */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block;
+    /* Removes extra space below the image */
+    border-radius: 5px;
+    /* Optional: softens the image corners */
+    object-fit: cover;
+    /* Ensures the image covers the area without distortion */
 }
 
 /* Accessibility Styles */
@@ -269,8 +295,8 @@ main {
     color: var(--white-color);
 }
 
-.high-contrast .sidebar-utp h3{
-  text-shadow: 0px 2px 4px rgba(128, 128, 128, 0.7);
+.high-contrast .sidebar-utp h3 {
+    text-shadow: 0px 2px 4px rgba(128, 128, 128, 0.7);
 }
 
 .high-contrast footer {
@@ -303,7 +329,8 @@ main {
 }
 
 .high-contrast.highlight-links #main-container a {
-    border-color: var(--high-contrast-orange); /* A brighter red for better contrast on black */
+    border-color: var(--high-contrast-orange);
+    /* A brighter red for better contrast on black */
 }
 
 /* Style for highlighting titles */
@@ -323,14 +350,16 @@ main {
 .high-contrast.highlight-titles #main-container h4,
 .high-contrast.highlight-titles #main-container h5,
 .high-contrast.highlight-titles #main-container h6 {
-    border-left-color: var(--high-contrast-yellow); /* Bright yellow for high contrast */
+    border-left-color: var(--high-contrast-yellow);
+    /* Bright yellow for high contrast */
 }
 
 .floating-btn-utp {
     position: fixed;
     top: 4.7rem;
     right: 1.2rem;
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 1000;
+    /* Ensure it's above other content */
 }
 
 footer {
@@ -346,7 +375,8 @@ footer {
 
 /* Reading Focus Overlay */
 #reading-focus-overlay {
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
     position: fixed;
     top: 0;
     left: 0;
@@ -354,7 +384,8 @@ footer {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.75);
     z-index: 9999;
-    pointer-events: none; /* Allows clicking through the overlay */
+    pointer-events: none;
+    /* Allows clicking through the overlay */
 }
 
 /* When reading focus is active, show the overlay */
@@ -363,27 +394,30 @@ footer {
 }
 
 .card {
-      background-color: transparent;
-      border: none;
-      padding: 1rem 0;
-      border: 1px solid #003D6D;
-    }
+    background-color: transparent;
+    border: none;
+    padding: 1rem 0;
+    border: 1px solid #003D6D;
+}
 
 .button-group {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem; /* Espacio entre los botones */
-  flex-wrap: wrap; /* Permite que los botones se ajusten en pantallas pequeñas */
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    /* Espacio entre los botones */
+    flex-wrap: wrap;
+    /* Permite que los botones se ajusten en pantallas pequeñas */
 }
 
 .button-group .btn {
-  padding: 0.8rem 1.6rem;
-  font-size: 1.1rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem; /* Espacio entre el icono y el texto */
-  border-radius: 8px;
-  border: 1px solid #003D6D;
+    padding: 0.8rem 1.6rem;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    /* Espacio entre el icono y el texto */
+    border-radius: 8px;
+    border: 1px solid #003D6D;
 }
 
 /* Estilos para el carrusel de la página de radicación (radicar.html) */
@@ -392,58 +426,73 @@ footer {
   evitando así el conflicto con la clase .carousel-item de Bootstrap que causa la sobreposición.
 */
 .carousel-item-content {
-  display: flex;
-  align-items: center; /* Centra verticalmente la imagen y el texto */
-  gap: 2rem; /* Espacio entre la imagen y el texto */
-  padding: 1rem 2rem; /* Añade algo de padding para que no esté pegado a los bordes */
-  height: 100%; /* Asegura que el contenido ocupe toda la altura del slide */
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente la imagen y el texto */
+    gap: 2rem;
+    /* Espacio entre la imagen y el texto */
+    padding: 1rem 2rem;
+    /* Añade algo de padding para que no esté pegado a los bordes */
+    height: 100%;
+    /* Asegura que el contenido ocupe toda la altura del slide */
 }
 
 #carouselExampleDark .carousel-item img {
-  max-width: 400px; /* Tamaño máximo para la imagen */
-  height: auto;
-  flex-shrink: 0; /* Evita que la imagen se encoja si no hay espacio */
+    max-width: 400px;
+    /* Tamaño máximo para la imagen */
+    height: auto;
+    flex-shrink: 0;
+    /* Evita que la imagen se encoja si no hay espacio */
 }
 
 #carouselExampleDark .carousel-caption {
-  /* Se anula el posicionamiento absoluto de Bootstrap para que el texto fluya al lado de la imagen */
-  position: static;
-  color: #212529; /* Color de texto oscuro por defecto de Bootstrap para que sea legible */
-  text-align: justify; /* Texto justificado como se solicitó */
-  padding: 0; /* Resetea el padding para un mejor control */
+    /* Se anula el posicionamiento absoluto de Bootstrap para que el texto fluya al lado de la imagen */
+    position: static;
+    color: #212529;
+    /* Color de texto oscuro por defecto de Bootstrap para que sea legible */
+    text-align: justify;
+    /* Texto justificado como se solicitó */
+    padding: 0;
+    /* Resetea el padding para un mejor control */
 }
 
 /* Opciones de radio dentro del carrusel */
 .form-option {
-  margin-top: 1.5rem; /* Margen superior para separar del título */
-  display: flex;
-  flex-direction: column;
-  gap: 1rem; /* Espacio entre cada opción de radio */
-  padding: 10px;
+    margin-top: 1.5rem;
+    /* Margen superior para separar del título */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* Espacio entre cada opción de radio */
+    padding: 10px;
 }
 
 .form-option .radio {
-  background-color: #f8f9fa; /* Un fondo claro para destacar las opciones */
-  padding: 1rem; /* Relleno interno generoso */
-  border: 1px solid #dee2e6;
-  border-radius: 0.5rem;
-  text-align: left; /* Alinear el texto a la izquierda */
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+    background-color: #f8f9fa;
+    /* Un fondo claro para destacar las opciones */
+    padding: 1rem;
+    /* Relleno interno generoso */
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    text-align: left;
+    /* Alinear el texto a la izquierda */
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
 }
 
 .form-option .radio:hover {
-  background-color: #e9ecef;
+    background-color: #e9ecef;
 }
 
 .form-option .radio input[type="radio"] {
-  margin-right: 0.75rem; /* Espacio entre el radio button y el texto */
+    margin-right: 0.75rem;
+    /* Espacio entre el radio button y el texto */
 }
 
 .text-em-utp {
-  font-style: italic;
-  font-weight: bold;
-  color: #003D6D;
+    font-style: italic;
+    font-weight: bold;
+    color: #003D6D;
 }
 
 /* Styles for carousel controls (prev/next buttons) */
@@ -452,9 +501,12 @@ footer {
 #carouselExampleDark .carousel-control-next {
     width: 30px;
     height: 30px;
-    border-radius: 50%; /* Make them perfectly round */
-    background-color: var(--gray-color); /* Grey with transparency */
-    border: 1px solid var(--border-color); /* Add a subtle border for definition */
+    border-radius: 50%;
+    /* Make them perfectly round */
+    background-color: var(--gray-color);
+    /* Grey with transparency */
+    border: 1px solid var(--border-color);
+    /* Add a subtle border for definition */
 
     /* Ensure vertical centering of the 30x30px button itself */
     top: 50%;
@@ -469,19 +521,24 @@ footer {
 }
 
 #carouselExampleDark .carousel-control-prev {
-    left: -20px; /* Adjust as needed to position slightly outside the carousel */
-    right: auto; /* Ensure no conflict with right property */
+    left: -20px;
+    /* Adjust as needed to position slightly outside the carousel */
+    right: auto;
+    /* Ensure no conflict with right property */
 }
 
 #carouselExampleDark .carousel-control-next {
-    right: -20px; /* Adjust as needed to position slightly outside the carousel */
-    left: auto; /* Ensure no conflict with left property */
+    right: -20px;
+    /* Adjust as needed to position slightly outside the carousel */
+    left: auto;
+    /* Ensure no conflict with left property */
 }
 
 /* Optional: Add hover effect for the buttons */
 #carouselExampleDark .carousel-control-prev:hover,
 #carouselExampleDark .carousel-control-next:hover {
-    background-color: #003D6D; /* Slightly darker grey on hover */
+    background-color: #003D6D;
+    /* Slightly darker grey on hover */
     border-color: #005293;
 }
 
@@ -551,17 +608,21 @@ footer {
 }
 
 /* Estilo para botones deshabilitados */
-.btn:disabled, .btn.disabled {
+.btn:disabled,
+.btn.disabled {
     background-color: #ccc;
-    border-color: #dee2e6; /* Asegura que el borde coincida */
+    border-color: #dee2e6;
+    /* Asegura que el borde coincida */
 }
 
 /* Estilo personalizado para la alerta en la página de inicio (home.html) */
 .alert.alert-custom-utp {
-    width: fit-content; /* Ajusta el ancho al contenido */
+    width: fit-content;
+    /* Ajusta el ancho al contenido */
     margin: 5px;
     padding: 5px;
-    align-self: start; /* Evita que la alerta se estire verticalmente en el grid */
+    align-self: start;
+    /* Evita que la alerta se estire verticalmente en el grid */
     background-color: #BFD3E3;
 }
 
@@ -571,13 +632,16 @@ footer {
 */
 .ql-toolbar.ql-snow {
     border-color: var(--gray-color);
-    border-radius: 5px 5px 0 0; /* Rounded top corners */
+    border-radius: 5px 5px 0 0;
+    /* Rounded top corners */
 }
 
 .ql-container.ql-snow {
     border-color: var(--gray-color);
-    min-height: 150px; /* Ensures the editor has a visible height */
-    border-radius: 0 0 5px 5px; /* Rounded bottom corners */
+    min-height: 150px;
+    /* Ensures the editor has a visible height */
+    border-radius: 0 0 5px 5px;
+    /* Rounded bottom corners */
 }
 
 /* Asegura que el botón de quitar archivo tenga un cursor de puntero */
@@ -597,37 +661,37 @@ footer {
 
 
 .semaforo-list-utp {
-                  list-style: none;
-                  padding: 0;
-                  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .semaforo-item-utp {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .semaforo-circle-utp {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  margin-right: 10px;
-  border: 2px solid var(--border-blue-color);
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid var(--border-blue-color);
 }
 
 .semaforo-circle-utp span {
-  color: white;
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-info-semaforo {
-  display: flex; 
-  align-items: center; 
-  gap: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 /* Aplica el filtro de color correspondiente a los iconos dentro de cada tipo de alerta */
@@ -657,14 +721,16 @@ footer {
 
 /* --- Expansion Panel Styles (request.html) --- */
 .expansion-panel-utp .card-body {
-    max-height: 500px; /* Altura máxima para la transición */
+    max-height: 500px;
+    /* Altura máxima para la transición */
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
 }
 
 /* Estado colapsado */
 .expansion-panel-utp.collapsed .card-body {
-    max-height: 165px; /* Altura aproximada para 3 elementos. Ajustar si es necesario. */
+    max-height: 165px;
+    /* Altura aproximada para 3 elementos. Ajustar si es necesario. */
 }
 
 .expansion-panel-utp.collapsed .request-item-utp:nth-child(n+4) {
@@ -678,4 +744,26 @@ footer {
 
 .expansion-panel-utp .btn-link {
     text-decoration: none;
+}
+
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: default;
+    text-decoration: none;
+    line-height: 1;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.badge-warning {
+    background-color: var(--warning-color);
+    border: 1px solid var(--warning-color);
 }

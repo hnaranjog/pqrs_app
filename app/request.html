@@ -1,48 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestros Servicios</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros Servicios</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
-    <div id="main-container">
-        <nav-placeholder></nav-placeholder>
+  <div id="main-container">
+    <nav-placeholder></nav-placeholder>
 
-        <main class="container-utp grid-1-col-utp">
-          <div class="grid-item-utp">
-            <h2>Listar solicitudes</h2>
-            <div class="card">
-              <div class="card expansion-panel-utp" id="request-panel">
-                <div class="card-header card-header-utp">
-                  <h3>Solicitudes Pendientes</h3>
-                </div>
-                <div class="card-body" id="request-list-container">
-                  <ul class="request-list-utp" id="request-list">
-                    <li class="request-item-utp">Solicitud 1</li>
-                    <li class="request-item-utp">Solicitud 2</li>
-                    <li class="request-item-utp">Solicitud 3</li>
-                    <li class="request-item-utp">Solicitud 5</li>
-                    <li class="request-item-utp">Solicitud 5</li>
-                    <li class="request-item-utp">Solicitud 4</li>
-                    <li class="request-item-utp">Solicitud 5</li>
-                    <li class="request-item-utp">Solicitud 6</li>
-                    <li class="request-item-utp">Solicitud 7</li>
-                  </ul>
-                </div>
-                <div class="card-footer text-center d-none" id="request-panel-footer">
-                  <button class="btn btn-link" id="request-panel-toggle">Ver más</button>
-                </div>
+    <main class="container-utp grid-1-col-utp">
+      <div class="grid-item-utp">
+        <h2>Listar solicitudes</h2>
+        <div class="card">
+          <div class="card expansion-panel-utp" id="request-panel">
+            <div class="card-header card-header-utp">
+              <h3>Solicitudes Pendientes</h3>
             </div>
-        </main>
-      </div>
+            <div class="card-body" id="request-list-container">
+              <ul class="request-list-utp" id="request-list">
+                <li class="request-item-utp">
+                  <span class="badge bg-primary">Pendiente</span>
+                  <a href="#">Radicado 001</a> - Acceso a la plataforma - Fecha: 23/11/2025
+                </li>
+                <li class="request-item-utp">
+                  <span class="badge bg-warning">Por vencer</span>
+                  <a href="#">Radicado 002</a> - Solicitud de certificado de notas - Fecha:
+                  24/11/2025
+                </li>
+                <li class="request-item-utp">
+                  <span class="badge bg-success">Suspendida</span>
+                  <a href="#">Radicado 003</a> - Queja por atención en ventanilla - Fecha:
+                  25/11/2025
+                </li>
+                <li class="request-item-utp">
+                  <span class="badge bg-primary">Pendiente</span>
+                  <a href="#">Radicado 004</a> - Sugerencia para cafetería central - Fecha:
+                  26/11/2025
+                </li>
+                <li class="request-item-utp">
+                  <span class="badge bg-primary">Pendiente</span>
+                  <a href="#">Radicado 005</a> - Consulta sobre fechas de grado - Fecha:
+                  27/11/2025
+                </li>
+                <li class="request-item-utp">
+                  <span class="badge bg-danger">Vencida</span>
+                  <a href="#">Radicado 006</a> - Problemas con el carné estudiantil - Fecha:
+                  28/11/2025
+                </li>
+                <li class="request-item-utp">
+                  <span class="badge bg-primary">Pendiente</span>
+                  <a href="#">Radicado 007</a> - Derecho de petición: Información
+                  presupuestal - Fecha:
+                  29/11/2025
+                </li>
+                <li class="request-item-utp">
+                  <span class="badge bg-danger">Vencida</span>
+                  <a href="#">Radicado 008</a> - Reporte de fallo en aire acondicionado -
+                  Fecha: 30/11/2025
+                </li>
+                <li class="request-item-utp">
+                  <span class="badge bg-danger">Vencida</span>
+                  <a href="#">Radicado 009</a> - Solicitud de espacio deportivo - Fecha:
+                  01/12/2025
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer text-center d-none" id="request-panel-footer">
+              <button class="btn btn-link" id="request-panel-toggle">Ver más</button>
+            </div>
+          </div>
+    </main>
+  </div>
 
-      <footer-placeholder></footer-placeholder>
-      
-      <sidebar-left-placeholder></sidebar-left-placeholder>
+  <footer-placeholder></footer-placeholder>
 
-    <!-- This script will load all components and then load the main script.js -->
-    <script src="/assets/js/loader.js"></script>
+  <sidebar-left-placeholder></sidebar-left-placeholder>
+
+  <!-- This script will load all components and then load the main script.js -->
+  <script src="/assets/js/loader.js"></script>
 </body>
+
 </html>
